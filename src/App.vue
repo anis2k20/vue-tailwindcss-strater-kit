@@ -109,25 +109,23 @@
 
         <!-- Connection Card -->
         <div
-          class="bg-[#163872] border border-white/10 rounded-2xl p-4.5 backdrop-blur-12 mb-6 relative overflow-hidden"
+          class="conn-card  rounded-2xl p-4.5 backdrop-blur-12 mb-6 relative overflow-hidden"
         >
-
-        
           <div
             class="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/30 to-transparent"
           ></div>
           <div class="conn-header flex justify-between items-center mb-3.5">
             <span
-              class="conn-title text-11 uppercase tracking-wider text-white font-medium font-mono"
+              class="conn-title text-sm uppercase tracking-wider text-white font-medium font-mono"
               >Connection Status</span
             >
             <div
-              class="conn-live flex items-center gap-1.5 text-11 text-success-400 font-mono"
+              class="conn-live flex items-center gap-1.5 text-xs text-success-400 font-mono"
             >
               <div
-                class="w-1.25 h-1.25 rounded-full bg-success-400 shadow-success-400 animate-pulse"
+                class="w-1.25 h-1.25 rounded-full  bg-success-400 shadow-success-400 animate-pulse"
               ></div>
-              LIVE
+              ONLINE
             </div>
           </div>
 
@@ -228,7 +226,7 @@
               </div>
               <span class="flex-1">Fiber Optic Network</span>
               <span
-                class="service-status font-mono text-10 text-success-400 tracking-wide"
+                class="service-status font-mono text-xs text-10 text-success-400 tracking-wide"
                 >ACTIVE</span
               >
             </div>
@@ -253,7 +251,7 @@
               </div>
               <span class="flex-1">Wi-Fi Hotspot</span>
               <span
-                class="service-status font-mono text-10 text-success-400 tracking-wide"
+                class="service-status font-mono text-10 text-success-400 tracking-wide text-xs"
                 >ACTIVE</span
               >
             </div>
@@ -261,7 +259,7 @@
               class="service-row flex items-center gap-2.5 p-2 px-2.5 bg-white/2 rounded-7 text-12 text-white/85"
             >
               <div
-                class="service-icon support rounded grid place-items-center flex-shrink-0 text-warning-500 bg-warning-500/2"
+                class="service-icon support rounded grid place-items-center shrink-0 text-warning-500 bg-warning-500/2"
               >
                 <svg
                   width="11"
@@ -278,7 +276,7 @@
               </div>
               <span class="flex-1">24/7 Support</span>
               <span
-                class="service-status font-mono text-10 text-success-400 tracking-wide"
+                class="service-status font-mono text-10 text-success-400 tracking-wide text-xs"
                 >AVAILABLE</span
               >
             </div>
@@ -722,5 +720,16 @@ const showPassword = ref(false);
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.conn-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 18px;
+  backdrop-filter: blur(12px);
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
 }
 </style>
